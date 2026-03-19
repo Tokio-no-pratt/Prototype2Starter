@@ -4251,6 +4251,9 @@ GameObject:
   - component: {fileID: 8695225413392737135}
   - component: {fileID: 2693671387659987842}
   - component: {fileID: 6791104694436670286}
+  - component: {fileID: 3830242459004905701}
+  - component: {fileID: 5415930178757354591}
+  - component: {fileID: 757540747264298750}
   m_Layer: 0
   m_Name: Dog_RhodesianRidgeback_01
   m_TagString: Untagged
@@ -4344,7 +4347,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d20023f9b1204e0a8a5517ccfefe691, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::moveForward
-  speed: 20
+  speed: 5
+--- !u!114 &3830242459004905701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6704162726480141544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 758491a07aed7400ab10ab939144fb15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
+--- !u!65 &5415930178757354591
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6704162726480141544}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.08320313, y: 0.1989175, z: 0.31156126}
+  m_Center: {x: -0.00026078225, y: 0.0961288, z: 0.0507221}
+--- !u!114 &757540747264298750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6704162726480141544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d064c761cab45e2b073430f216b439, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!1 &6767448986253314333
 GameObject:
   m_ObjectHideFlags: 0
